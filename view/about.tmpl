@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="static/css/style.css">
+		<script src="static/js/script.js"></script>
+		<link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
+		<script src="https://unpkg.com/htmx.org@1.9.8"></script>
+		<title>{{ . }}</title>
+	</head>
+
+	<body>
+		<!-- Navbar -->
+		<div hx-get="/nav" hx-swap="outerHTML" hx-trigger="load"></div>
+			
+		<h2>Jacob Smith</h2>
+		<p>I expect to graduate sometime next year</p>
+		<p>
+			I am not currently employed <em>in</em> web development, however I have used NodeJS in a professional capacity when I created a visualization tool for my research position. Unfortunately, I can't demonstrate this tool because of the confidential nature of the survey responses... Gosh darn Institutional Review Boards!
+		</p>
+		<button onclick="annoyingAlert()">Click Me!</button>
+		<img src="static/img/jake.jpg"/>
+	</body>
+</html>
